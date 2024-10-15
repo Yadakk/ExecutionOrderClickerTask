@@ -6,9 +6,8 @@ namespace ExecutionOrderClickerTask.GameAssembly
 {
     public class GameInstaller : MonoInstaller
     {
-        [Header("Score")]
         [SerializeField]
-        private int initialScore = 5;
+        private ScoreConfig scoreConfig;
 
         public override void InstallBindings()
         {
@@ -18,8 +17,9 @@ namespace ExecutionOrderClickerTask.GameAssembly
 
         private void BindMechanics()
         {
-            Container.Bind<Score>().FromInstance(new(initialScore)).AsSingle();
             Container.Bind<RaycastClicker>().FromInstance(new(Camera.main)).AsSingle();
+            Container.Bind<ScoreConfig>().FromInstance(scoreConfig).AsSingle();
+            Container.Bind<Score>().AsSingle();
         }
 
         private void BindInput()

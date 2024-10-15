@@ -10,9 +10,9 @@ namespace ExecutionOrderClickerTask.GameAssembly
 
         public System.Action<int> OnValueChanged;
 
-        public Score(int value)
+        public Score(ScoreConfig scoreConfig)
         {
-            SetValue(value);
+            SetValue(scoreConfig.InitialScore);
         }
 
         public void SetValue(int newValue)

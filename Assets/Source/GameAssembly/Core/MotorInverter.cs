@@ -20,7 +20,6 @@ namespace ExecutionOrderClickerTask.GameAssembly
         private void OnEnable()
         {
             InvokeRepeating(nameof(Invert), invertDelay, invertDelay);
-
         }
 
         private void Invert()
