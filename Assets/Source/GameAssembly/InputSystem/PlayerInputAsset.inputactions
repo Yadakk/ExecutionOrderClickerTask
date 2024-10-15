@@ -1,0 +1,54 @@
+{
+    "name": "PlayerInputAsset",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "0ee0aa20-49d1-4fc8-b12d-9896fd34aebe",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "543baa8e-4e75-4091-90f1-d49af48c1eff",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Quit",
+                    "type": "Button",
+                    "id": "6ccfd659-2485-400c-bddc-457af76e2b1f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e80ff1a2-ccee-4ca5-a7a0-bd6bdd392199",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c88d6ef3-aff2-4fe5-be8e-a3dce6bed4b5",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Quit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
