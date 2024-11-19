@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using Zenject;
 
-namespace ExecutionOrderClickerTask.GameAssembly
+namespace ExecutionOrderClickerTask.ScoreSystem
 {
+    using Clicks;
+
     public class ScoreClickable : MonoBehaviour, IClickable
     {
         [SerializeField]

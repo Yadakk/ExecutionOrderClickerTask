@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ExecutionOrderClickerTask.GameAssembly
+namespace ExecutionOrderClickerTask.ScoreSystem
 {
     [CreateAssetMenu(fileName = "New Score Config", menuName = "Score Config", order = 51)]
     public class ScoreConfig : ScriptableObject

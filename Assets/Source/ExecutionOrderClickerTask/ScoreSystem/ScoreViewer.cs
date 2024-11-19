@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using Zenject;
 
-namespace ExecutionOrderClickerTask.GameAssembly
+namespace ExecutionOrderClickerTask.ScoreSystem
 {
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class ScoreViewer : MonoBehaviour

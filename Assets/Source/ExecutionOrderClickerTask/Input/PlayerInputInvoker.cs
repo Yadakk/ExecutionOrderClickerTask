@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ExecutionOrderClickerTask.GameAssembly
+namespace ExecutionOrderClickerTask.Input
 {
+    using Clicks;
+
     public class PlayerInputInvoker
     {
         private readonly PlayerInputListener listener;

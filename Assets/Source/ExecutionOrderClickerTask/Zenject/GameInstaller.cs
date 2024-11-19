@@ -2,8 +2,12 @@ using TMPro;
 using UnityEngine;
 using Zenject;
 
-namespace ExecutionOrderClickerTask.GameAssembly
+namespace ExecutionOrderClickerTask.GameAssembly.Zenject
 {
+    using ScoreSystem;
+    using Clicks;
+    using Input;
+
     public class GameInstaller : MonoInstaller
     {
         [SerializeField]

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ExecutionOrderClickerTask.GameAssembly
+namespace ExecutionOrderClickerTask.MotorInversion
 {
     [RequireComponent(typeof(HingeJoint))]
     public class MotorInverter : MonoBehaviour

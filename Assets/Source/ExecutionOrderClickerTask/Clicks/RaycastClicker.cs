@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ExecutionOrderClickerTask.GameAssembly
+namespace ExecutionOrderClickerTask.Clicks
 {
     public class RaycastClicker
     {
@@ -15,7 +15,7 @@ namespace ExecutionOrderClickerTask.GameAssembly
 
         public void Raycast()
         {
-            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            Ray ray = camera.ScreenPointToRay(UnityEngine.Input.mousePosition);
             if (!Physics.Raycast(ray, out var hitInfo)) return;
             if (!hitInfo.collider.TryGetComponent<IClickable>(out var clickable)) return;
             clickable.Click();
